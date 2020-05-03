@@ -1,10 +1,11 @@
 const Sequelize = require("sequelize");
 
 const db = new Sequelize(
-	"postgres://localhost:5432/reactPractice_login", 
-	{ 
+	"postgresql://localhost:5432/devdrums", 
+	{
 		logging: false
 	}
 );
 
 module.exports = db;
+

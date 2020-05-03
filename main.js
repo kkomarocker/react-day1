@@ -5,8 +5,8 @@ const PORT = 8080;
 db
 	.sync()
 	.then(() => {
-		console.log("db synced");
+		console.log("db connected and synced");
 		app.listen(PORT, () => {
-			console.log(`Server is listening to the port ${[PORT]}`);
+			console.log(`Server is listening to the port ${PORT}`);
 		});
 	});
